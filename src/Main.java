@@ -29,4 +29,70 @@ public class Main {
          */
 
     }
+
+    class Osoba {
+        private String imie;
+        private String nazwisko;
+        private Integer indeks;
+
+
+        public String setImie(String imie) {
+            imie = "Adam";
+            return imie;
+        }
+
+
+        public String setNazwisko(String nazwisko) {
+            nazwisko = "Mazowiecki";
+            return nazwisko;
+        }
+
+
+        public int setIndeks(Integer indeks) {
+            indeks = 546233;
+            return indeks;
+        }
+
+
+        public Osoba() {
+            String imie = setImie("Adam");
+            String nazwisko = setNazwisko("Mazowiecki");
+            Integer indeks = setIndeks(546233);
+
+            System.out.println(imie + " " + nazwisko + "\n Numer indeksu" + indeks);
+        }
+
+        /* zad 2 */
+
+        Class Student;
+
+
+
+
+
+
+
+
+
+
+
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
