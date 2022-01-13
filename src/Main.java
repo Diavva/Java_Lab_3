@@ -20,40 +20,35 @@ public class Main {
 
 
 
-        Student student1 = new Student(){
-
-        String Imię = "Basia";
-        String Nazwisko = "Kowalska";
-        int rok = 3;
-        boolean attending = true;
-        };
+        Student stud1 = new Student();
+        stud1.Imię = "Basia";
+        stud1.Nazwisko = "Kowalska";
+        stud1.rok = 3;
+        stud1.attending = true;
 
 
-        Student student2 = new Student() {
+        Student stud2 = new Student();
+        stud2.Imię = "Kasia";
+        stud2.Nazwisko = "Bolewska";
+        stud2.rok = 4;
+        stud2.attending = false;
 
-            String Imię = "Kasia";
-            String Nazwisko = "Kowalska";
-            int rok = 5;
-            boolean attending = false;
-        };
+        Student stud3 = new Student();
+        stud3.Imię = "Daniel";
+        stud3.Nazwisko = "Stachowski";
+        stud3.rok = 8;
+        stud3.attending = true;
 
-        Student student3 = new Student() {
 
-            String Imię = "Daniel";
-            String Nazwisko = "Stachowski";
-            int rok = 8;
-            boolean attending = true;
-        };
+        String[] studimiona = {"Basia Kowalska", "Kasia Bolewska", "Daniel Stachowski"};
+        int [] studrok = {2,4,8};
+        boolean [] attendance = {true, false, true};
 
-        ArrayList<Student> studentci = new ArrayList<>();
-        studentci.add(student1);
-        studentci.add(student2);
-        studentci.add(student3);
+        System.out.println(studimiona[0] + "\n" + "Klasa: " + studrok[0] + "\n" + "Obecny/a : " + attendance[0] + "\n");
+        System.out.println(studimiona[1] + "\n" + "Klasa: " + studrok[1] + "\n" + "Obecny/a : " + attendance[1] + "\n");
+        System.out.println(studimiona[2] + "\n" + "Klasa: " + studrok[2] + "\n" + "Obecny/a : " + attendance[2]);
 
-        for(Student student: studentci);
-        {
-            System.out.println(student1  + "\n" + student2 + "\n" + student3);
-        }
+
 
 
 
