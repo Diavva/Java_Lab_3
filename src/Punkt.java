@@ -20,4 +20,38 @@ public class Punkt {
             roznica(){ return pX - pY - pZ} i roznica(int x, int y, int z){ return pX*x - pY*y - pZ*z }
         d) nadpisać metodę toString(), aby zwracała wszystkie wartości pól, analogicznie jak w przykładzie
      */
+
+    private int pX;
+    private int pY;
+    private int pZ;
+/* punkt a
+* */
+
+    public Punkt() {
+
+    }
+/* punkt b
+
+    public Punkt (int pX) {
+        this.pX = pX;
+    }
+    */
+
+    public Punkt (int pY, int pX, int pZ){
+        this.pY = pY;
+        this.pX = pX;
+        this.pZ = pZ;
+    }
+
+    public int getpX() {
+        return pX;
+    }
+
+    public int getpY() {
+        return pY;
+    }
+
+    public int getpZ() {
+        return pZ * 10;
+    }
 }
