@@ -27,7 +27,7 @@ public class Punkt {
 /* punkt a
 * */
 
-    public Punkt() {
+    public Punkt(){
 
     }
 /* punkt b
