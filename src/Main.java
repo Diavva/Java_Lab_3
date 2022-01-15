@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -65,10 +69,53 @@ public class Main {
         /* zad 2 */
 
         Class Student;
+        private Osoba osoba;
+        private Enum WydziałEnum;
+
+        public Osoba(Class student) {
+            Student = student;
+        }
+
+        public Enum getWydziałEnum() {
+            return WydziałEnum;
+        }
+
+        public void setWydziałEnum(Enum wydziałEnum) {
+            WydziałEnum = wydziałEnum;
+        }
+
+        @Override
+        public String toString() {
+            return "Osoba{" +
+                    "imie='" + imie + '\'' +
+                    ", nazwisko='" + nazwisko + '\'' +
+                    ", indeks=" + indeks +
+                    ", Student=" + Student +
+                    ", osoba=" + osoba +
+                    ", WydziałEnum=" + WydziałEnum +
+                    '}';
+        }
+    /* zad3 */
+
+
+        Osoba student1 = new Osoba();
+        Osoba student2 = new Osoba();
+        Osoba student3 = new Osoba();
+        Osoba student4 = new Osoba();
+        Osoba student5 = new Osoba();
 
 
 
 
+        List list1 = Arrays.asList(student1,student2,student3,student4,student5);
+
+        public List getList1() {
+            return list1;
+        }
+
+        public void setList1(List list1) {
+            this.list1 = list1;
+        }
 
 
 
@@ -78,6 +125,12 @@ public class Main {
 
 
     }
+
+
+
+
+
+
 }
 
 
